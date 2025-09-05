@@ -10,3 +10,4 @@ AWS, Java,21, Spring Boot 3
 <img width="870" height="512" alt="image" src="https://github.com/user-attachments/assets/1a67b769-316c-41c5-9807-bbd3223d7648" />
    4. IAM :  For User Management
    5. Create Spring Boot and to connect with S3 Client we need AWS SDK
+<img width="669" height="273" alt="image" src="https://github.com/user-attachments/assets/0c536b55-23d2-42e4-9a2b-cce9a4cd31f9" />
