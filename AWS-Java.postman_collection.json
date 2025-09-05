@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "1a3c1311-d1a7-46d2-b231-22fe23a5706d",
+		"name": "AWS-Java",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "345744"
+	},
+	"item": [
+		{
+			"name": "upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/rohit/Downloads/Rohit Shelar Yellow 500kb.gif"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/upload",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "download",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/download/Rohit Shelar Yellow 500kb.gif",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"download",
+						"Rohit Shelar Yellow 500kb.gif"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
