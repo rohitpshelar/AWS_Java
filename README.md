@@ -7,3 +7,4 @@ AWS, Java,21, Spring Boot 3
        2. 
     2. Set up free billing alerts to avoid surprise charges
     3. Common mistakes beginners make (and how to avoid them)
+<img width="870" height="512" alt="image" src="https://github.com/user-attachments/assets/1a67b769-316c-41c5-9807-bbd3223d7648" />
