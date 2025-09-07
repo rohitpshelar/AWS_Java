@@ -7,6 +7,27 @@
 	},
 	"item": [
 		{
+			"name": "AWS",
+			"item": [
+				{
+					"name": "Public DNS",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Public IPv4 address",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
 			"name": "upload",
 			"request": {
 				"method": "POST",
