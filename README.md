@@ -14,3 +14,12 @@ AWS, Java,21, Spring Boot 3
    6. Add dependency `implementation("software.amazon.awssdk:s3:2.33.2")`
    7. Create client : [S3Client.java](src/main/java/com/example/aws_java/config/S3Client.java) and update [application.properties](src/main/resources/application.properties)
    8. Perform Operation via [S3Controller.java](src/main/java/com/example/aws_java/Controller/S3Controller.java) and [S3Service.java](src/main/java/com/example/aws_java/service/S3Service.java)
+   9. put in AWS > EC2 > advance script 
+   ```shell
+    yum update -y
+    yum install -y httpd
+    systemctl start httpd
+    systemctl enable httpd
+    
+    echo "<html><head><title>My First AWS Page</title></head><body><h1>Hello from EC2</h1><p>This is a static HTML page hosted on Apache.</p></body></html>" > /var/www/html/index.html
+    ```
