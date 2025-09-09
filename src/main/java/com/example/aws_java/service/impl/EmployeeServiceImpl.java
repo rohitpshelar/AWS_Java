@@ -6,6 +6,7 @@ import com.example.aws_java.mapper.EmployeeMapper;
 import com.example.aws_java.repository.EmployeeRepository;
 import com.example.aws_java.service.EmployeeService;
 import lombok.AllArgsConstructor;
+import org.springframework.context.annotation.Profile;
 import org.springframework.dao.DataAccessResourceFailureException;
 import org.springframework.stereotype.Service;
 
@@ -13,6 +14,7 @@ import java.util.List;
 
 @Service
 @AllArgsConstructor
+@Profile("!localToDynamoDB & !awsEc2ToDynamoDB")
 public class EmployeeServiceImpl implements EmployeeService {
 
     private EmployeeRepository employeeRepository;

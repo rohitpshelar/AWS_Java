@@ -52,6 +52,8 @@ AWS, Java,21, Spring Boot 3
       5. Test postman added : [AWS-Java.postman_collection.json](AWS-Java.postman_collection.json)
    10. Part 9 :  AWS RDS Tutorial for Beginners | Launch MySQL DB and Connect via Terminal
        1. Create DB on AWS > RDS
-       2. Access from windows Terminal
+       2. Access from Windows Terminal
           * Format : `mysql -h your-endpoint.rds.amazonaws.com -P 3306 -u your-username -p`
           * URL :  `mysql -h aws-java.c50icia4g0x5.ap-south-1.rds.amazonaws.com -P 3306 -u admin -p`
+   11. ✅ Master AWS DynamoDB 🚀 | Serverless, Scalable NoSQL Database Explained 
+       12. Local to DynamoDB Config added [AwsDbClient.java](src/main/java/com/example/aws_java/config/AwsDbClient.java)
