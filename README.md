@@ -8,12 +8,13 @@ AWS, Java,21, Spring Boot 3
     2. Set up free billing alerts to avoid surprise charges
     3. Common mistakes beginners make (and how to avoid them)
 <img width="870" height="512" alt="image" src="https://github.com/user-attachments/assets/1a67b769-316c-41c5-9807-bbd3223d7648" />
-   4. IAM :  For User Management
+## IAM :  For User Management
    5. Create Spring Boot and to connect with S3 Client we need AWS SDK
 <img width="669" height="273" alt="image" src="https://github.com/user-attachments/assets/0c536b55-23d2-42e4-9a2b-cce9a4cd31f9" />
    6. Add dependency `implementation("software.amazon.awssdk:s3:2.33.2")`
    7. Create client : [S3Client.java](src/main/java/com/example/aws_java/config/S3Client.java) and update [application.properties](src/main/resources/application.properties)
    8. Perform Operation via [S3Controller.java](src/main/java/com/example/aws_java/Controller/S3Controller.java) and [S3Service.java](src/main/java/com/example/aws_java/service/S3Service.java)
+   9. S3 Access user from IAM
 ## Create EC2 instance - (server)
    1. put in AWS > EC2 > advance script 
       ```shell
@@ -49,3 +50,8 @@ AWS, Java,21, Spring Boot 3
       4. In EC2 console for permanent run `nohup java -Dspring.profiles.active=aws -jar aws-java-0.0.1-SNAPSHOT.jar > output.log 2>&1 &`
       4. Create Role > IAM  > role > to access S3 in EC2 `%s3Full%` > Add role in EC2
       5. Test postman added : [AWS-Java.postman_collection.json](AWS-Java.postman_collection.json)
+   10. Part 9 :  AWS RDS Tutorial for Beginners | Launch MySQL DB and Connect via Terminal
+       1. Create DB on AWS > RDS
+       2. Access from windows Terminal
+          * Format : `mysql -h your-endpoint.rds.amazonaws.com -P 3306 -u your-username -p`
+          * URL :  `mysql -h aws-java.c50icia4g0x5.ap-south-1.rds.amazonaws.com -P 3306 -u admin -p`

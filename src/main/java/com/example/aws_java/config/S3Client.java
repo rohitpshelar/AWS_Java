@@ -17,7 +17,7 @@ public class S3Client {
 
     @Bean
     @Profile("local")
-    public software.amazon.awssdk.services.s3.S3Client S3Client(@Value("${cloud.aws.credentials.access-key}") String accessKey,
+    public software.amazon.awssdk.services.s3.S3Client S3ClientLocal(@Value("${cloud.aws.credentials.access-key}") String accessKey,
                                                                 @Value("${cloud.aws.credentials.secret-key}") String secretKey){
         return software.amazon.awssdk.services.s3.S3Client.builder()
                 .region(Region.of(region))
@@ -30,7 +30,7 @@ public class S3Client {
     public software.amazon.awssdk.services.s3.S3Client S3ClientAws(){
         return software.amazon.awssdk.services.s3.S3Client.builder()
                 .region(Region.of(region))
-                .credentialsProvider(DefaultCredentialsProvider.create())
+                .credentialsProvider(DefaultCredentialsProvider.builder().build())
                 .build();
     }
 }
